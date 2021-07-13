@@ -1,38 +1,233 @@
-.App {
+/* font-family: 'Londrina Shadow', cursive;
+font-family: 'Londrina Solid', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Zen Loop', cursive; */
+
+#root {
   text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(205, 240, 234, 1) 13%,
+    rgba(205, 240, 234, 1) 34%,
+    rgba(247, 219, 240, 1) 61%,
+    rgba(190, 174, 226, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.contact-link {
+  color: white;
+  font-size: 9rem;
+  text-decoration: none;
+  pointer-events: fill;
 }
 
-.App-logo {
-  height: 40vmin;
+.contact-link:hover {
+  color: black;
+}
+
+#code-pic {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   pointer-events: none;
+
+  /* Full height */
+  height: 100%;
+  width: 100vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  filter: opacity(0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-div {
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Londrina Shadow", cursive;
+  font-size: 6rem;
+  color: black;
+  padding-top: 5%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Londrina Shadow", cursive;
+  font-size: 9rem;
+  color: black;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+
+.landing-p {
+  font-family: "Zen Loop", cursive;
+  font-size: 4rem;
+}
+
+#me-pic {
+  filter: drop-shadow(1px 2px 3px black);
+  width: 20%;
+}
+
+.navbar {
+  background-color: transparent !important;
+  font-family: "Londrina Solid", cursive;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  color: black !important;
+}
+
+.project-pic {
+  width: 50%;
+  border: black;
+  border-style: groove;
+  border-radius: 160px;
+}
+
+.project-card {
+  margin: 3% auto;
+  background: white;
+  border-style: none;
+  font-family: "Zen Loop", cursive;
+  border: 2px solid black;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  line-height: normal;
+  text-align: justify;
+}
+
+.project-pic:hover {
+  border-color: white;
+  border-style: solid;
+}
+
+.section-div {
+  height: 100vh;
+}
+
+/* Baby Book Page */
+
+#babybook-gif {
+  width: 90%;
+  margin-top: 3%;
+}
+
+.bb-cont {
+  margin-top: 2.5%;
+}
+
+#bb-visit {
+  background-color: rgba(190, 174, 226, 1);
   color: white;
+  border-color: white;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#bb-visit:hover {
+  background-color: white;
+  color: rgba(190, 174, 226, 1);
+  border-color: rgba(190, 174, 226, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-img {
+  width: 3%;
+}
+
+.list-group {
+  padding: 3% 0;
+}
+
+.list-group-item {
+  background-color: rgba(190, 174, 226, 1);
+  color: white;
+  text-align: justify;
+  border-color: white;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.btn-primary {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+/* Experience Section */
+
+.exp-card {
+  margin: 3% 5%;
+  font-family: "Zen Loop", cursive;
+  font-size: 0.5rem;
+  border: 2px solid black;
+}
+
+#pca-pic {
+  width: 50%;
+  margin: 1% auto;
+}
+
+#meketa-pic {
+  width: 50%;
+  margin: 1% auto;
+}
+
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* ABOUT ME */
+
+#hike-pic {
+  width: 20%;
+  filter: drop-shadow(1px 2px 3px black);
+}
+
+.about-me-text .list-group-item {
+  font-family: "Zen Loop", cursive;
+  font-size: 1.5rem;
+  margin: 0 2%;
+  line-height: normal;
+  background-color: white;
+  color: black;
+}
+
+.contact-button {
+  background-color: black;
+  border-radius: 25px;
+  border-color: black;
+  padding: 5%;
+  color: white;
+  font-family: "Zen Loop", cursive;
+  font-size: 2.5rem;
+}
+
+.contact-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.contact-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-btns {
+  margin: 5% auto;
+}
+
+#me-card {
+  border: 2px solid black;
 }
