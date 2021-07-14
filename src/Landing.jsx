@@ -121,7 +121,7 @@ function App() {
       </div>
       <div className="section-div">
         <a name="experience">
-          <h1>Experience</h1>
+          <h1 id="exp-header">Experience</h1>
         </a>
         <div className="container-fluid">
           <div className="row">
