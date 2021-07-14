@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "0.1.0",
-  "homepage": "kristenchasecodes.com",
+  "homepage": "https://www.kristenchasecodes.com",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
