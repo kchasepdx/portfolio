@@ -11,7 +11,7 @@ import hikepic from "./Images/me-hiking.png";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <Nav />
       <div>
         <div id="background-img">
@@ -206,7 +206,7 @@ function App() {
       </div>
       <div className="section-div">
         <a name="about-me">
-          <h1>About Me</h1>
+          <h1 id="about-h1">About Me</h1>
           <div className="container-fluid">
             <img id="me-pic" src={me} alt="Kristen Chase" />
             <ul className="about-me-text list-group">
