@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.81b56c2b.chunk.css",
-    "main.js": "/static/js/main.0b97d0fe.chunk.js",
-    "main.js.map": "/static/js/main.0b97d0fe.chunk.js.map",
+    "main.css": "/static/css/main.96b65062.chunk.css",
+    "main.js": "/static/js/main.8ad555a9.chunk.js",
+    "main.js.map": "/static/js/main.8ad555a9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.facf96d4.js",
     "runtime-main.js.map": "/static/js/runtime-main.facf96d4.js.map",
-    "static/js/2.b3e893c1.chunk.js": "/static/js/2.b3e893c1.chunk.js",
-    "static/js/2.b3e893c1.chunk.js.map": "/static/js/2.b3e893c1.chunk.js.map",
+    "static/js/2.bc9b449d.chunk.js": "/static/js/2.bc9b449d.chunk.js",
+    "static/js/2.bc9b449d.chunk.js.map": "/static/js/2.bc9b449d.chunk.js.map",
     "static/js/3.9015a17a.chunk.js": "/static/js/3.9015a17a.chunk.js",
     "static/js/3.9015a17a.chunk.js.map": "/static/js/3.9015a17a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.81b56c2b.chunk.css.map": "/static/css/main.81b56c2b.chunk.css.map",
-    "static/js/2.b3e893c1.chunk.js.LICENSE.txt": "/static/js/2.b3e893c1.chunk.js.LICENSE.txt",
+    "static/css/main.96b65062.chunk.css.map": "/static/css/main.96b65062.chunk.css.map",
+    "static/js/2.bc9b449d.chunk.js.LICENSE.txt": "/static/js/2.bc9b449d.chunk.js.LICENSE.txt",
     "static/media/BabyBookGIF.9e714199.gif": "/static/media/BabyBookGIF.9e714199.gif",
     "static/media/Bootstrap-logo.0b914c5e.png": "/static/media/Bootstrap-logo.0b914c5e.png",
     "static/media/JSlogo.266bd9fb.png": "/static/media/JSlogo.266bd9fb.png",
     "static/media/baby-book.d06f1b5f.png": "/static/media/baby-book.d06f1b5f.png",
     "static/media/code-screenshot.93b80f04.png": "/static/media/code-screenshot.93b80f04.png",
+    "static/media/coding.403caa3a.png": "/static/media/coding.403caa3a.png",
     "static/media/figma-logo.90eb21ce.png": "/static/media/figma-logo.90eb21ce.png",
     "static/media/firebase.8896e25c.png": "/static/media/firebase.8896e25c.png",
     "static/media/kristen-circle.0feef81c.png": "/static/media/kristen-circle.0feef81c.png",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/me-hiking.bb5a4466.png": "/static/media/me-hiking.bb5a4466.png",
     "static/media/react-logo.69bdee9b.png": "/static/media/react-logo.69bdee9b.png",
     "static/media/react-router-logo.59eb6c21.png": "/static/media/react-router-logo.59eb6c21.png",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.facf96d4.js",
-    "static/js/2.b3e893c1.chunk.js",
-    "static/css/main.81b56c2b.chunk.css",
-    "static/js/main.0b97d0fe.chunk.js"
+    "static/js/2.bc9b449d.chunk.js",
+    "static/css/main.96b65062.chunk.css",
+    "static/js/main.8ad555a9.chunk.js"
   ]
 }
