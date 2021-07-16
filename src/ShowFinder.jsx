@@ -12,24 +12,29 @@ function ShowFinder() {
       <div id="showfinder-div">
         <h1 className="proj-headers">Show Finder</h1>
         <div className="container-fluid logo-container">
-          <img class="logo-img" id="bs-logo" src={BSLogo} alt="boostrap logo" />
           <img
-            class="logo-img"
-            id="router-logo"
-            src={ReactRouterLogo}
-            alt=" react router logo"
+            className="logo-img"
+            id="bs-logo"
+            src={BSLogo}
+            alt="boostrap logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
+            id="router-logo"
+            src={ReactRouterLogo}
+            alt="react router logo"
+          />
+          <img
+            className="logo-img"
             id="react-logo"
             src={ReactLogo}
             alt="react logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="js-logo"
             src={JSLogo}
-            alt=" javascript logo"
+            alt="javascript logo"
           />
         </div>
         <a href="https://kchasepdx.github.io/showfinder">

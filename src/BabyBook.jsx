@@ -16,37 +16,37 @@ function BabyBook() {
         <h1 className="proj-headers">Baby Book</h1>
         <div className="container-fluid logo-container">
           <img
-            class="logo-img"
+            className="logo-img"
             id="figma-logo"
             src={FigmaLogo}
             alt="figma logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="bs-logo"
             src={BSLogo}
             alt=" bootstrap logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="firebase-logo"
             src={FireBaseLogo}
             alt=" firebase logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="router-logo"
             src={ReactRouterLogo}
             alt="react router logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="react-logo"
             src={ReactLogo}
             alt=" react logo"
           />
           <img
-            class="logo-img"
+            className="logo-img"
             id="js-logo"
             src={JSLogo}
             alt=" javascript logo"
