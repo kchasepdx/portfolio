@@ -63,7 +63,10 @@ function App() {
                 </a>
               </div>
               <div className="col">
-                <a href="https://kchasepdx.github.io/showfinder">
+                <a
+                  href="https://kchasepdx.github.io/showfinder"
+                  alt="Visit Showfinder"
+                >
                   <img
                     id="showfinder-pic"
                     src={showfinder}
@@ -83,12 +86,20 @@ function App() {
               <div className="col">
                 <div className="card project-card">
                   <div className="card-body">
-                    <h5 className="card-title">Virtual Baby Book</h5>
+                    <a className="h5-anchor" href="/babybook">
+                      <h5 className="card-title">Virtual Baby Book</h5>
+                    </a>
                     <p className="card-text">
                       Website that allows parents to store memories about their
                       baby’s first years virtually. Includes a social media
                       component where users can share and comment about funny
                       stories.
+                      <span>
+                        <a href="/babybook" className="inline-link">
+                          {" "}
+                          Learn more.
+                        </a>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -96,11 +107,19 @@ function App() {
               <div className="col">
                 <div className="card project-card">
                   <div className="card-body">
-                    <h5 className="card-title">Show Finder</h5>
+                    <a className="h5-anchor" href="/showfinder">
+                      <h5 className="card-title">Show Finder</h5>
+                    </a>
                     <p className="card-text">
                       Website that utilizes an API to suggest a tv show for the
                       user based on responses to a short quiz. Also includes a
                       trivia game.
+                      <span>
+                        <a href="/showfinder" className="inline-link">
+                          {" "}
+                          Learn more.
+                        </a>
+                      </span>
                     </p>
                   </div>
                 </div>
