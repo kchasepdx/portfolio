@@ -15,12 +15,42 @@ function BabyBook() {
       <div id="baby-book-div">
         <h1 className="proj-headers">Baby Book</h1>
         <div className="container-fluid logo-container">
-          <img class="logo-img" id="figma-logo" src={FigmaLogo} />
-          <img class="logo-img" id="bs-logo" src={BSLogo} />
-          <img class="logo-img" id="firebase-logo" src={FireBaseLogo} />
-          <img class="logo-img" id="router-logo" src={ReactRouterLogo} />
-          <img class="logo-img" id="react-logo" src={ReactLogo} />
-          <img class="logo-img" id="js-logo" src={JSLogo} />
+          <img
+            class="logo-img"
+            id="figma-logo"
+            src={FigmaLogo}
+            alt="figma logo"
+          />
+          <img
+            class="logo-img"
+            id="bs-logo"
+            src={BSLogo}
+            alt=" bootstrap logo"
+          />
+          <img
+            class="logo-img"
+            id="firebase-logo"
+            src={FireBaseLogo}
+            alt=" firebase logo"
+          />
+          <img
+            class="logo-img"
+            id="router-logo"
+            src={ReactRouterLogo}
+            alt="react router logo"
+          />
+          <img
+            class="logo-img"
+            id="react-logo"
+            src={ReactLogo}
+            alt=" react logo"
+          />
+          <img
+            class="logo-img"
+            id="js-logo"
+            src={JSLogo}
+            alt=" javascript logo"
+          />
         </div>
         <a href="https://baby-book.netlify.app">
           <button id="bb-visit" className="btn-primary">
