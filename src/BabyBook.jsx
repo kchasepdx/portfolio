@@ -13,7 +13,7 @@ function BabyBook() {
     <div className="container-fluid">
       <Nav />
       <div id="baby-book-div">
-        <h1>Baby Book</h1>
+        <h1 className="proj-headers">Baby Book</h1>
         <div className="container-fluid logo-container">
           <img class="logo-img" id="figma-logo" src={FigmaLogo} />
           <img class="logo-img" id="bs-logo" src={BSLogo} />
@@ -22,9 +22,11 @@ function BabyBook() {
           <img class="logo-img" id="react-logo" src={ReactLogo} />
           <img class="logo-img" id="js-logo" src={JSLogo} />
         </div>
-        <button id="bb-visit" className="btn-primary">
-          Visit Site
-        </button>
+        <a href="https://baby-book.netlify.app">
+          <button id="bb-visit" className="btn-primary">
+            Visit Site
+          </button>
+        </a>
 
         <div className="container bb-cont">
           <div className="row icon-row">
@@ -41,48 +43,46 @@ function BabyBook() {
                   using radial-gradient
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  Firebase utilized for Authorization and Database.
+                  <i class="fas fa-check-circle"> {""}</i> Firebase utilized for
+                  Authorization and Database.
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  React Router used for individual, public and private routes.
-                  Private Routes can’t be accessed unless user is logged in.
+                  <i class="fas fa-check-circle"> {""}</i> React Router used for
+                  individual, public and private routes. Private Routes can’t be
+                  accessed unless user is logged in.
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  Navbar highlights the current page and displays UserName(if
-                  entered).
+                  <i class="fas fa-check-circle"> {""}</i> Navbar highlights the
+                  current page and displays UserName(if entered).
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  If User has input baby’s birthdate, the profile home page will
-                  display number of months or years of baby’s age (componitized
-                  function that uses javascript to calculate number of
-                  months/years). Profile page also display’s baby’s name and
-                  photo, if those have been saved by User.
+                  <i class="fas fa-check-circle"> {""}</i> If User has input
+                  baby’s birthdate, the profile home page will display number of
+                  months or years of baby’s age (componitized function that uses
+                  javascript to calculate number of months/years). Profile page
+                  also display’s baby’s name and photo, if those have been saved
+                  by User.
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  On the Questionnaire page, User can save information about
-                  their baby to be viewed in the virtual book. The User’s former
-                  answers will populate when Questionnaire is revisited.
+                  <i class="fas fa-check-circle"> {""}</i> On the Questionnaire
+                  page, User can save information about their baby to be viewed
+                  in the virtual book. The User’s former answers will populate
+                  when Questionnaire is revisited.
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  Created function to display birthday in Day of the week,
-                  month, year format.
+                  <i class="fas fa-check-circle"> {""}</i> Created function to
+                  display birthday in Day of the week, month, year format.
                 </li>
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  On the Community page users can post stories or questions
-                  about their little ones. Comments display user names and are
-                  sorted by newest to oldest.
+                  <i class="fas fa-check-circle"> {""}</i> On the Community page
+                  users can post stories or questions about their little ones.
+                  Comments display user names and are sorted by newest to
+                  oldest.
                 </li>
 
                 <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i>
-                  Used Google Firebase to store posts and user comments.
+                  <i class="fas fa-check-circle"> {""}</i> Used Google Firebase
+                  to store posts and user comments.
                 </li>
               </ul>
             </div>

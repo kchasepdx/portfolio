@@ -128,6 +128,19 @@ h1 {
   width: 20%;
 }
 
+/* Projects */
+
+.h5-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.inline-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
 .project-pic {
   width: 50%;
   border: black;
@@ -168,6 +181,7 @@ h1 {
 #babybook-gif {
   width: 90%;
   margin-top: 3%;
+  border: solid 4px #94b5c0;
 }
 
 .bb-cont {
@@ -175,16 +189,18 @@ h1 {
 }
 
 #bb-visit {
-  background-color: rgba(190, 174, 226, 1);
+  background-color: #94b5c0;
   color: white;
   border-color: white;
   border-radius: 20px;
+  border: solid 4px white;
+  font-size: 1.5rem;
 }
 
 #bb-visit:hover {
   background-color: white;
-  color: rgba(190, 174, 226, 1);
-  border-color: rgba(190, 174, 226, 1);
+  color: #94b5c0;
+  border-color: #94b5c0;
 }
 
 .logo-img {
@@ -196,7 +212,7 @@ h1 {
 }
 
 .list-group-item {
-  background-color: rgba(190, 174, 226, 1);
+  background-color: #94b5c0;
   color: white;
   text-align: justify;
   border-color: white;
@@ -323,10 +339,25 @@ h6 {
   position: absolute;
 }
 
-.fixed-top {
-  margin: 3%;
-}
-
 .menu-btn {
   background-color: #5c636a;
+}
+
+/* showfinder page */
+
+#showfinder-div {
+  min-height: 100vh;
+}
+
+#sf-visit {
+  background-color: #94b5c0;
+  color: white;
+  border-color: white;
+  border-radius: 20px;
+  border: solid 4px white;
+  font-size: 1.5rem;
+}
+
+.proj-headers {
+  padding-top: 7%;
 }
