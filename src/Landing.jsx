@@ -8,6 +8,7 @@ import meketa from "./Images/Meketa.png";
 import pca from "./Images/PCA-logo.png";
 import showfinder from "./Images/showfinder.png";
 import hikepic from "./Images/me-hiking.png";
+import coding from "./Images/coding.png";
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
           <div className="container">
             <div className="row">
               <div className="col">
-                <a href="https://kchasepdx.github.io/babybook">
+                <a href="https://baby-book.netlify.app">
                   <img
                     id="baby-book-pic"
                     src={babyBook}
@@ -195,6 +196,28 @@ function App() {
                       eVestment.
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card exp-card">
+                <img
+                  id="code-icon"
+                  src={coding}
+                  alt="code icon"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5>Student of Software Developement</h5>
+                  <h6>2020-Current</h6>
+                  <p className="card-text">
+                    My interest in coding was initially sparked years ago, but I
+                    just recently decided to quit my finance position to devote
+                    all of my available time to learning to code. I completed
+                    the UDemy 2021 Complete Web Development Bootcamp and have
+                    worked on numerous personal projects to further my
+                    knowledge.
+                  </p>
                 </div>
               </div>
             </div>

@@ -149,7 +149,7 @@ h1 {
 }
 
 .card-text {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: normal;
   text-align: justify;
 }
@@ -224,6 +224,11 @@ h1 {
 #meketa-pic {
   width: 50%;
   margin: 1% auto;
+}
+
+#code-icon {
+  width: 20%;
+  margin: 0 auto;
 }
 
 h5,
