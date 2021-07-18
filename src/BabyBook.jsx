@@ -62,7 +62,11 @@ function BabyBook() {
           <div className="row icon-row">
             <div className="col">
               <div className="container-fluid">
-                <img id="babybook-gif" src={BBGIF} />
+                <img
+                  id="babybook-gif"
+                  src={BBGIF}
+                  alt="gif of user experience on babybook site"
+                />
               </div>
             </div>
             <div className="col">

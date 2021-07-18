@@ -63,7 +63,7 @@ function App() {
               </div>
               <div className="col">
                 <a
-                  href="https://kchasepdx.github.io/showfinder"
+                  href="https://theshowfinder.netlify.app/"
                   alt="Visit Showfinder"
                 >
                   <img
