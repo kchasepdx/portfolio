@@ -97,7 +97,7 @@ h1 {
   .exp-card {
     font-size: 0.4em;
     margin: 2%;
-    text-align: left;
+    text-align: center;
   }
 
   #me-pic {
@@ -115,6 +115,10 @@ h1 {
 
   #exp-header {
     font-size: 3rem;
+  }
+
+  #meketa-pic{
+    margin: 1% auto;
   }
 }
 
