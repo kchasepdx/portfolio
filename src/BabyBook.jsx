@@ -52,7 +52,11 @@ function BabyBook() {
             alt=" javascript logo"
           />
         </div>
-        <a href="https://baby-book.netlify.app">
+        <a
+          href="https://baby-book.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button id="bb-visit" className="btn-primary">
             Visit Site
           </button>

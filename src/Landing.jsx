@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import screenshot from "./Images/code-screenshot.png";
 import me from "./Images/kristen-circle.png";
@@ -10,6 +11,23 @@ import hikepic from "./Images/me-hiking.png";
 import coding from "./Images/coding.png";
 
 function App() {
+  const [fullPCA, setFullPCA] = useState(false);
+  const [fullMIG, setFullMIG] = useState(false);
+  const [fullSD, setFullSD] = useState(false);
+
+  function viewFull(e) {
+    if (e.target.parentElement.id === "PCA") {
+      setFullPCA(!fullPCA);
+    } else if (e.target.parentElement.id === "Meketa") {
+      setFullMIG(!fullMIG);
+    } else if (e.target.parentElement.id === "softDev") {
+      setFullSD(!fullSD);
+    } else {
+      console.log(e);
+      console.log(e.target.parentElement.id);
+    }
+  }
+
   return (
     <div className="App container-fluid">
       <Nav />
@@ -52,7 +70,11 @@ function App() {
           <div className="container">
             <div className="row">
               <div className="col">
-                <a href="https://baby-book.netlify.app">
+                <a
+                  href="https://baby-book.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     id="baby-book-pic"
                     src={babyBook}
@@ -65,6 +87,8 @@ function App() {
                 <a
                   href="https://theshowfinder.netlify.app/"
                   alt="Visit Showfinder"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     id="showfinder-pic"
@@ -155,68 +179,89 @@ function App() {
                 <div className="card-body">
                   <h5>Senior Investment Analyst</h5>
                   <h6>2011-2019</h6>
-                  <p className="card-text">
-                    Pension Consulting Alliance (PCA) was an investing
-                    consulting firm that serviced institutional investors like
-                    public pension plans. It merged with Meketa Investment Group
-                    in 2019. I held several roles at this firm and was
-                    evenutally a Senior Investment Analyst. As an Investment
-                    Analyst my responsibilities included:{" "}
-                  </p>
-                  <ul className="card-text">
-                    <li>Coordinate small consulting teams</li>
-                    <li>
-                      Generate investment performance reports, client memos, and
-                      presentations
-                    </li>
-                    <li>Travel and Present to client board meetings</li>
-                    <li>Lead a weekly staff meeting</li>
-                  </ul>
+                  <button id="PCA" onClick={(e) => viewFull(e)}>
+                    <i class="far fa-caret-square-down expand-icon"></i>
+                  </button>
+                  {fullPCA && (
+                    <div>
+                      <p className="card-text">
+                        Pension Consulting Alliance (PCA) was an investing
+                        consulting firm that serviced institutional investors
+                        like public pension plans. It merged with Meketa
+                        Investment Group in 2019. I held several roles at this
+                        firm and was evenutally a Senior Investment Analyst. As
+                        an Investment Analyst my responsibilities included:{" "}
+                      </p>
+                      <ul className="card-text">
+                        <li>Coordinate small consulting teams</li>
+                        <li>
+                          Generate investment performance reports, client memos,
+                          and presentations
+                        </li>
+                        <li>Travel and Present to client board meetings</li>
+                        <li>Lead a weekly staff meeting</li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
 
             <div className="col">
               <div className="card exp-card">
-                <img
-                  id="meketa-pic"
-                  src={meketa}
-                  alt="Meketa Investment Group logo"
-                  className="card-img-top"
-                />
+                <a href="https://meketa.com" target="_blank" rel="noreferrer">
+                  <img
+                    id="meketa-pic"
+                    src={meketa}
+                    alt="Meketa Investment Group logo"
+                    className="card-img-top"
+                  />
+                </a>
                 <div className="card-body">
                   <h5>Assistant V.P. / Investment Analyst</h5>
                   <h6>2019-2021</h6>
-                  <p className="card-text">
-                    Meketa is a full-service investment consulting and advisory
-                    firm serving institutional investors. I was hired as an
-                    Investment Analyst at Meketa following the firm's merger
-                    with PCA. Meketa provides the following services to clients:
-                    Initial Investment Fund Review, Investment Policy Design,
-                    Asset Allocation, Reporting & Analysis, Board Education My
-                    responsibilities at Meketa incldued:
-                  </p>
-                  <ul className="card-text">
-                    <li>Serve as project manager for client deliverables</li>
-                    <li>
-                      Provide internal support for production of reporting and
-                      other meeting materials
-                    </li>
-                    <li>
-                      Collaborate with Consultant on client recommendations
-                    </li>
-                    <li>
-                      Interact with research teams to provide services to client
-                    </li>
-                    <li>
-                      Utilize a variety of investment software including
-                      Investment Metrics, MPI Stylus, Morningstar, and
-                      eVestment.
-                    </li>
-                  </ul>
+                  <button id="Meketa" onClick={(e) => viewFull(e)}>
+                    <i class="far fa-caret-square-down expand-icon"></i>
+                  </button>
+                  {fullMIG && (
+                    <div>
+                      <p className="card-text">
+                        Meketa is a full-service investment consulting and
+                        advisory firm serving institutional investors. I was
+                        hired as an Investment Analyst at Meketa following the
+                        firm's merger with PCA. Meketa provides the following
+                        services to clients: Initial Investment Fund Review,
+                        Investment Policy Design, Asset Allocation, Reporting &
+                        Analysis, Board Education My responsibilities at Meketa
+                        incldued:
+                      </p>
+                      <ul className="card-text">
+                        <li>
+                          Serve as project manager for client deliverables
+                        </li>
+                        <li>
+                          Provide internal support for production of reporting
+                          and other meeting materials
+                        </li>
+                        <li>
+                          Collaborate with Consultant on client recommendations
+                        </li>
+                        <li>
+                          Interact with research teams to provide services to
+                          client
+                        </li>
+                        <li>
+                          Utilize a variety of investment software including
+                          Investment Metrics, MPI Stylus, Morningstar, and
+                          eVestment.
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
+
             <div className="col">
               <div className="card exp-card">
                 <img
@@ -228,23 +273,33 @@ function App() {
                 <div className="card-body">
                   <h5>Student of Software Developement</h5>
                   <h6>2020-Current</h6>
-                  <p className="card-text">
-                    My interest in coding was initially sparked years ago, but I
-                    just recently decided to quit my finance position to devote
-                    all of my available time to learning to code. I completed
-                    the UDemy 2021 Complete Web Development Bootcamp and have
-                    worked on numerous personal projects to further my
-                    knowledge.
-                  </p>
+                  <button id="softDev" onClick={(e) => viewFull(e)}>
+                    <i class="far fa-caret-square-down expand-icon"></i>
+                  </button>
+
+                  {fullSD && (
+                    <div>
+                      <p className="card-text">
+                        My interest in coding was initially sparked years ago,
+                        but I just recently decided to quit my finance position
+                        to devote all of my available time to learning to code.
+                        I completed the UDemy 2021 Complete Web Development
+                        Bootcamp and have worked on numerous personal projects
+                        to further my knowledge.
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
-            <div className="r-100"></div>
-            <div className="col"></div>
-            <div className="col"></div>
           </div>
         </div>
       </div>
+
+      {/* <div className="r-100"></div>
+            <div className="col"></div>
+            <div className="col"></div> */}
+
       <div className="section-div">
         <a name="about-me">
           <h1 id="about-h1">About Me</h1>
@@ -252,21 +307,27 @@ function App() {
             <img id="me-pic" src={me} alt="Kristen Chase" />
             <ul className="about-me-text list-group">
               <li id="me-card" className="list-group-item">
-                I grew up and went to college in Lawrence, KS. I moved to
-                Portland, OR over ten years ago. I secured a great job in
-                finance and kept getting promoted, but never felt super
-                passionate about my work. After the pandemic I decided to take a
-                big leap and quit my job in order to devote my free time to
-                learning to code. I'm loving every minute of it. Hours in front
-                of my computer fly by. I especially love the problem solving. It
-                can be tedious and annoying at times, but it is so rewarding
-                when things work out. When I'm not in front of the computer I'm
-                hanging out with my family - my husband, our 18 month old
-                daughter, and our manchester terrier mix, Rooney. I enjoy
-                cooking, going outdoors to take in the natural beaty of the
-                Pacific Northwest, and drinking too much coffee. I'm hoping to
-                find a job where I can be a part of a strong team, be
-                challenged, and add value.
+                I grew up and went to college in Lawrence, KS. Upon graduating I
+                was eager for change and moved to Portland, OR. I secured a
+                great job in finance. In my free time I learned a little bit of
+                Javascript and would do coding puzzles. I committed to learning
+                about finance and was trusted with more and more responsibilties
+                until I was eventully promoted to an Investment Analyst. During
+                the pandemic I decided to explore coding once again. I
+                immediately realized that I had a knack for it. I had to force
+                myself to sit down and learn financial concepts, but with coding
+                I looked forward to the evenings in front of the screen. After
+                about a year I took a big leap and quit my job in order to
+                devote all of my availabe time to learning to code. I'm loving
+                every minute of it. Hours in front of my computer fly by. I
+                especially love the problem solving. It can be tedious and soul
+                crushing at times, but it is so rewarding when things work out.
+                When I'm not in front of the computer I'm hanging out with my
+                family - my husband, our toddler daughter, and our Manchester
+                Terrier mix, Rooney. I enjoy cooking, going outdoors to take in
+                the natural beaty of the Pacific Northwest, and drinking too
+                much coffee. I'm hoping to find a role where I can be a part of
+                a strong team, be challenged, and add value.
               </li>
             </ul>
           </div>

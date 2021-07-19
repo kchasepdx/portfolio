@@ -4,6 +4,7 @@ import ReactRouterLogo from "./Images/react-router-logo.png";
 import ReactLogo from "./Images/react-logo.png";
 import JSLogo from "./Images/JSlogo.png";
 import BSLogo from "./Images/Bootstrap-logo.png";
+import SFGif from "./Images/showfinder.gif";
 
 function ShowFinder() {
   return (
@@ -37,11 +38,64 @@ function ShowFinder() {
             alt="javascript logo"
           />
         </div>
-        <a href="https://kchasepdx.github.io/showfinder">
+        <a
+          href="https://theshowfinder.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button className="btn-primary" id="sf-visit">
             Visit
           </button>
         </a>
+
+        <div className="container bb-cont">
+          <div className="row icon-row">
+            <div className="col">
+              <div className="container-fluid">
+                <img
+                  id="sf-gif"
+                  src={SFGif}
+                  alt="gif of user experience on showfinder site"
+                />
+              </div>
+            </div>
+            <div className="col">
+              <ul className="list-group">
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> My first solo project
+                  after finishing the Udemy Bootcamp.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> Color pallette
+                  selected with ColorHunt.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> API - The Movie
+                  Database to source television show suggestions.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> Skip the Quiz
+                  generates a random show from The Movie Database's collection.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> Taking the quiz will
+                  sort throught the shows and offer a more tailored response.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> The Trivia Quiz is
+                  ten questions. The Score is announced on the last page.
+                </li>
+
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> I learned a lot about
+                  React, and using APIs in developing this app. I also used a
+                  lot of custom CSS which I learned is a lot harder than it
+                  looks.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
