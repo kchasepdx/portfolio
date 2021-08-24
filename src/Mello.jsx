@@ -6,11 +6,11 @@ import ReactLogo from "./Images/react-logo.png";
 import JSLogo from "./Images/JSlogo.png";
 import BSLogo from "./Images/Bootstrap-logo.png";
 import FigmaLogo from "./Images/figma-logo.png";
-import BBGIF from "./Images/BabyBookGIF.gif";
 import NodeJS from "./Images/nodejs.png";
 import MongoDB from "./Images/mongodblogo.png";
 import StripeLogo from "./Images/stripelogo.png";
 import ReduxLogo from "./Images/redux.png";
+import MelloGif from "./Images/mellogif.gif";
 
 function Mello() {
   return (
@@ -96,7 +96,7 @@ function Mello() {
               <div className="container-fluid">
                 <img
                   id="mello-gif"
-                  src={BBGIF}
+                  src={MelloGif}
                   alt="gif of user experience on mello site"
                 />
               </div>
@@ -111,6 +111,10 @@ function Mello() {
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> Stripe is utilized
                   for payment processing.
+                </li>
+                <li className="list-group-item">
+                  <i class="fas fa-check-circle"> {""}</i> Inventory is
+                  automatically updated upon successful order from Stripe.
                 </li>
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> Admin users can log
