@@ -158,7 +158,9 @@ function App() {
               <div className="col">
                 <div className="card project-card">
                   <div className="card-body">
-                    <h5 className="h5-anchor">Mello Clothing Store</h5>
+                    <a className="h5-anchor" href="/mello">
+                      <h5 className="card-title">Mello Clothing Store</h5>
+                    </a>
                     <p className="card-text">
                       E-commerce site with custom built front and back end.
                       Connects to a MongoDB database which stores user and
