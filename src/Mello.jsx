@@ -16,7 +16,7 @@ function Mello() {
   return (
     <div className="container-fluid">
       <Nav />
-      <div id="baby-book-div">
+      <div id="mello-div">
         <h1 className="proj-headers">Mello</h1>
         <div className="container-fluid logo-container">
           <img
@@ -118,7 +118,8 @@ function Mello() {
                 </li>
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> Admin users can log
-                  in and update product information on the backend.
+                  in and update product information and create products on the
+                  backend.
                 </li>
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> Navbar has a dropdown
