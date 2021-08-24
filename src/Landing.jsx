@@ -9,6 +9,7 @@ import pca from "./Images/PCA-logo.png";
 import showfinder from "./Images/showfinder.png";
 import hikepic from "./Images/me-hiking.png";
 import coding from "./Images/coding.png";
+import mello from "./Images/mello-circle.png";
 
 function App() {
   const [fullPCA, setFullPCA] = useState(false);
@@ -98,13 +99,20 @@ function App() {
                   />
                 </a>
               </div>
-              {/* <div className="col">
-                <img
-                  className="project-pic"
-                  src={showfinder}
-                  alt="Card image cap"
-                />
-              </div> */}
+              <div className="col">
+                <a
+                  href="https://mellostore.herokuapp.com"
+                  alt="Visit Mello"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="project-pic"
+                    src={mello}
+                    alt="site screencap"
+                  />
+                </a>
+              </div>
               <div className="w-100"></div>
               <div className="col">
                 <div className="card project-card">
@@ -147,17 +155,24 @@ function App() {
                   </div>
                 </div>
               </div>
-              {/* <div className="col">
+              <div className="col">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">TBD</h5>
+                    <h5 className="card-title">Mello Clothing Store</h5>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      E-commerce site with custom built front and back end.
+                      Connects to a MongoDB database which stores user and
+                      product data.
+                      <span>
+                        <a href="/mello" className="inline-link">
+                          {" "}
+                          Learn more.
+                        </a>
+                      </span>{" "}
                     </p>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </a>
@@ -281,11 +296,11 @@ function App() {
                     <div>
                       <p className="card-text">
                         My interest in coding was initially sparked years ago,
-                        but I just recently decided to quit my finance position
-                        to devote all of my available time to learning to code.
-                        I completed the UDemy 2021 Complete Web Development
-                        Bootcamp and have worked on numerous personal projects
-                        to further my knowledge.
+                        but I just recently decided to resign from my finance
+                        position to devote all of my available time to learning
+                        to code. I completed the UDemy 2021 Complete Web
+                        Development Bootcamp and have worked on numerous
+                        personal projects to further my knowledge.
                       </p>
                     </div>
                   )}
