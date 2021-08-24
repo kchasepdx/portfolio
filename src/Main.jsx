@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 //Pages
 import BabyBook from "./BabyBook";
 import Landing from "./Landing";
+import Mello from "./Mello";
 import ShowFinder from "./ShowFinder";
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
         <Route exact path="/" component={Landing} />
         <Route exact path="/babybook" component={BabyBook} />
         <Route exact path="/showfinder" component={ShowFinder} />
+        <Route exact path="/mello" component={Mello} />
       </Switch>
     </BrowserRouter>
   );
