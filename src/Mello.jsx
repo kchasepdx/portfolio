@@ -85,8 +85,17 @@ function Mello() {
           target="_blank"
           rel="noreferrer"
         >
-          <button id="bb-visit" className="btn-primary">
-            Visit Site
+          <button className="btn-primary site-visit">
+            <i class="fas fa-sign-in-alt"></i>Visit Site
+          </button>
+        </a>
+        <a
+          href="https://github.com/kchasepdx/mello"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="btn-primary code-visit">
+            <i class="fas fa-code"></i>View Code
           </button>
         </a>
 
@@ -95,9 +104,9 @@ function Mello() {
             <div className="col">
               <div className="container-fluid">
                 <img
-                  id="mello-gif"
                   src={MelloGif}
                   alt="gif of user experience on mello site"
+                  className="site-gif"
                 />
               </div>
             </div>
@@ -105,8 +114,9 @@ function Mello() {
               <ul className="list-group">
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> I built the frontend
-                  and backend for this app using React, React Redux, NodeJS, and
-                  MongoDB. It has been deployed with Heroku.
+                  and backend for this app using React, React Redux, NodeJS,
+                  Bootstrap, Fontawesome, and MongoDB. It has been deployed with
+                  Heroku.
                 </li>
                 <li className="list-group-item">
                   <i class="fas fa-check-circle"> {""}</i> Stripe is utilized

@@ -43,8 +43,17 @@ function ShowFinder() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="btn-primary" id="sf-visit">
-            Visit
+          <button className="btn-primary site-visit">
+            <i class="fas fa-sign-in-alt"></i> Visit Site
+          </button>
+        </a>
+        <a
+          href="https://github.com/kchasepdx/showfinder"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="btn-primary code-visit">
+            <i class="fas fa-code"></i> View code
           </button>
         </a>
 
@@ -53,9 +62,9 @@ function ShowFinder() {
             <div className="col">
               <div className="container-fluid">
                 <img
-                  id="sf-gif"
                   src={SFGif}
                   alt="gif of user experience on showfinder site"
+                  className="site-gif"
                 />
               </div>
             </div>

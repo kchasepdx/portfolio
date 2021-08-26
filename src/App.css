@@ -216,15 +216,25 @@ h1 {
 }
 
 .list-group-item {
-  background-color: #94b5c0;
-  color: white;
+  background-color: transparent;
+  color: black;
   text-align: justify;
-  border-color: white;
+  font-size: 1.1rem;
+  border: none;
   font-family: "Nanum Myeongjo", serif;
 }
 
 .btn-primary {
   font-family: "Nanum Myeongjo", serif;
+}
+
+.fa-check-circle {
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+ul.list-group {
+  list-style-type: square;
 }
 
 /* Experience Section */
@@ -327,6 +337,10 @@ h6 {
   font-family: "Nanum Myeongjo", serif;
 }
 
+.dropdown-divider {
+  color: white;
+}
+
 .navbar {
   background-color: transparent !important;
   font-family: "Londrina Solid", cursive;
@@ -339,6 +353,11 @@ h6 {
 
 .navbar-brand:hover {
   color: black !important;
+}
+
+.proj-bull {
+  font-size: 0.4rem;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 769px) {
@@ -387,14 +406,42 @@ h6 {
   border: solid 4px #94b5c0;
 }
 
-/* Mello */
-
-#mello-gif {
-  width: 90%;
-  margin-top: 3%;
-  border: solid 4px #94b5c0;
-}
+/* Mello Page*/
 
 #mello-div {
   min-height: 100vh;
+}
+
+/* Project Pages */
+.site-gif {
+  width: 90%;
+  margin-top: 3%;
+  border: solid 4px black;
+}
+.site-visit {
+  border-radius: 15px;
+  background-color: transparent;
+  border: black 2px solid;
+  color: black;
+  padding: 6px;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.site-visit:hover,
+.code-visit:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.code-visit {
+  border-radius: 15px;
+  background-color: transparent;
+  border: black 2px solid;
+  color: black;
+  padding: 6px;
+  font-size: 1.3rem;
+  margin-left: 2%;
+  margin-top: 5px;
 }

@@ -57,8 +57,17 @@ function BabyBook() {
           target="_blank"
           rel="noreferrer"
         >
-          <button id="bb-visit" className="btn-primary">
-            Visit Site
+          <button className="btn-primary site-visit">
+            <i class="fas fa-sign-in-alt"></i> Visit Site
+          </button>
+        </a>
+        <a
+          href="https://github.com/kchasepdx/babybook"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="btn-primary code-visit">
+            <i class="fas fa-code"></i> View code
           </button>
         </a>
 
@@ -67,9 +76,9 @@ function BabyBook() {
             <div className="col">
               <div className="container-fluid">
                 <img
-                  id="babybook-gif"
                   src={BBGIF}
                   alt="gif of user experience on babybook site"
+                  className="site-gif"
                 />
               </div>
             </div>
