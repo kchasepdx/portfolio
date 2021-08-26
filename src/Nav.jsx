@@ -1,26 +1,96 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <div>
       <div className="nav fixed-top full-nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-              Home
-            </a>
-            <a class="navbar-brand" href="/#projects">
-              Projects
-            </a>
-            <a class="navbar-brand" href="/#experience">
-              Experience
-            </a>
-            <a class="navbar-brand" href="/#about-me">
-              About Me
-            </a>
-            <a class="navbar-brand" href="/#contact">
-              Contact
-            </a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a
+                    className="nav-link active navbar-brand"
+                    aria-current="page"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item dropdown ">
+                  <a
+                    className="nav-link dropdown-toggle navbar-brand"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </a>
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a className="dropdown-item" href="#projects">
+                        About Projects
+                      </a>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/mello">
+                        <i className="proj-bull far fa-circle"></i> Mello Store
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/babybook">
+                        <i className="proj-bull far fa-circle"></i> Virtual Baby
+                        Book
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link className="dropdown-item" to="/showfinder">
+                        <i className="proj-bull far fa-circle"></i> Show Finder
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link navbar-brand" href="#experience">
+                    Experience
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link navbar-brand" href="#about-me">
+                    About Me
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link navbar-brand" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -33,7 +103,7 @@ function Nav() {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li className="dropdown-item">
