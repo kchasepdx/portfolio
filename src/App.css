@@ -13,6 +13,10 @@ font-family: 'Zen Loop', cursive; */
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   text-align: center;
 }
+ul {
+  padding-left: 2rem;
+  list-style-type: square;
+}
 .contact-link {
   color: white;
   font-size: 9rem;
@@ -186,10 +190,6 @@ h1 {
   width: 90%;
   margin-top: 3%;
   border: solid 4px #94b5c0;
-}
-
-.bb-cont {
-  margin-top: 2.5%;
 }
 
 #bb-visit {
@@ -414,8 +414,8 @@ h6 {
 
 /* Project Pages */
 .site-gif {
-  width: 90%;
-  margin-top: 3%;
+  width: 30%;
+  margin: 3% auto;
   border: solid 4px black;
 }
 .site-visit {
@@ -444,4 +444,22 @@ h6 {
   font-size: 1.3rem;
   margin-left: 2%;
   margin-top: 5px;
+}
+
+.proj-cont {
+  margin-top: 0.5%;
+  text-align: left;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.gif-div {
+  text-align: center;
+}
+
+.proj-divider {
+  color: black;
+}
+
+.proj-div {
+  min-height: 100vh;
 }

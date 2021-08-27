@@ -10,7 +10,7 @@ import BBGIF from "./Images/BabyBookGIF.gif";
 
 function BabyBook() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid proj-div">
       <Nav />
       <div id="baby-book-div">
         <h1 className="proj-headers">Baby Book</h1>
@@ -71,69 +71,75 @@ function BabyBook() {
           </button>
         </a>
 
-        <div className="container bb-cont">
-          <div className="row icon-row">
-            <div className="col">
-              <div className="container-fluid">
-                <img
-                  src={BBGIF}
-                  alt="gif of user experience on babybook site"
-                  className="site-gif"
-                />
-              </div>
-            </div>
-            <div className="col">
-              <ul className="list-group">
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Original designs
-                  imagined in Figma. Background rainbow on Landing Page created
-                  using radial-gradient
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Firebase utilized for
-                  Authorization and Database.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> React Router used for
-                  individual, public and private routes. Private Routes can’t be
-                  accessed unless user is logged in.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Navbar highlights the
-                  current page and displays UserName(if entered).
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> If User has input
-                  baby’s birthdate, the profile home page will display number of
-                  months or years of baby’s age (componitized function that uses
-                  javascript to calculate number of months/years). Profile page
-                  also display’s baby’s name and photo, if those have been saved
-                  by User.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> On the Questionnaire
-                  page, User can save information about their baby to be viewed
-                  in the virtual book. The User’s former answers will populate
-                  when Questionnaire is revisited.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Created function to
-                  display birthday in Day of the week, month, year format.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> On the Community page
-                  users can post stories or questions about their little ones.
-                  Comments display user names and are sorted by newest to
-                  oldest.
-                </li>
+        <div className="container-fluid">
+          <img
+            src={BBGIF}
+            alt="gif of user experience on babybook site"
+            className="site-gif"
+          />
+        </div>
 
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Used Google Firebase
-                  to store posts and user comments.
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="container proj-cont">
+          <h2>Created With:</h2>
+          <ul>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>FireBase Authorization</li>
+            <li>FireStore</li>
+            <li>Figma</li>
+            <li>FontAwesome</li>
+          </ul>
+
+          <h2>Features</h2>
+          <hr className="dropdown-divider proj-divider" />
+
+          <h4>Register and Login System</h4>
+          <ul>
+            <li>Users log in as customers.</li>
+            <li>Authentication is provided by Firestore.</li>
+            <li>
+              Private Routes can't be access unless user is authenticated.
+            </li>
+          </ul>
+
+          <h4>User Experience</h4>
+          <ul>
+            <li>
+              Navbar highlights the current page and displays UserName(if user
+              is logged in)
+            </li>
+            <li>
+              If User has input baby’s birthdate profile home page will display
+              number of months or years of baby’s age ( componitized function
+              that uses javascript to calculate number of months/years)
+            </li>
+            <li>
+              Profile page also display’s baby’s name and photo, if those have
+              been saved by User
+            </li>
+            <li>
+              On the Questionnaire page, User can save information about their
+              baby to be viewed in the virtual book. The User’s former answers
+              will populate.
+            </li>
+            <li>
+              In baby book birthday displayed in Day of the week, month, year
+              format
+            </li>
+            <li>
+              On the Community page users can post stories or questions about
+              their little ones.
+            </li>
+          </ul>
+
+          <h2>Planned Improvements</h2>
+          <hr className="dropdown-divider proj-divider" />
+
+          <ul>
+            <li>Refactor with redux to add to questionnaire / book.</li>
+          </ul>
         </div>
       </div>
     </div>

@@ -58,51 +58,52 @@ function ShowFinder() {
         </a>
 
         <div className="container bb-cont">
-          <div className="row icon-row">
-            <div className="col">
-              <div className="container-fluid">
-                <img
-                  src={SFGif}
-                  alt="gif of user experience on showfinder site"
-                  className="site-gif"
-                />
-              </div>
+          <div className="col">
+            <div className="container-fluid">
+              <img
+                src={SFGif}
+                alt="gif of user experience on showfinder site"
+                className="site-gif"
+              />
             </div>
-            <div className="col">
-              <ul className="list-group">
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> My first solo project
-                  after finishing the Udemy Bootcamp.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Color pallette
-                  selected with ColorHunt.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> API - The Movie
-                  Database to source television show suggestions.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Skip the Quiz
-                  generates a random show from The Movie Database's collection.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> Taking the quiz will
-                  sort throught the shows and offer a more tailored response.
-                </li>
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> The Trivia Quiz is
-                  ten questions. The Score is announced on the last page.
-                </li>
+          </div>
+          <div className="proj-cont">
+            <h2>Features</h2>
+            <hr className="dropdown-divider proj-divider" />
+            <h4>User Experience</h4>
+            <ul>
+              <li>
+                User choose to Skip the Quiz and get an instant tv show
+                recommendation. This recommendation will be a randomly selected
+                show.
+              </li>
+              <li>
+                If User chooses, there is a 3 question quiz to generate a more
+                tailored recommendation.
+              </li>
+              <li>
+                User can take a trivia quiz that has ten questions about
+                different tv shows. Score will show at the end of the quiz.
+              </li>
+            </ul>
+            <h4>API</h4>
+            <span>
+              <a href="https://www.themoviedb.org/documentation/api">
+                The Movie Database Documentation
+              </a>
+            </span>
+            <p>
+              The site uses API from The Movie Database to generate tv show
+              recommendations.
+            </p>
 
-                <li className="list-group-item">
-                  <i class="fas fa-check-circle"> {""}</i> I learned a lot about
-                  React, and using APIs in developing this app. I also used a
-                  lot of custom CSS which I learned is a lot harder than it
-                  looks.
-                </li>
-              </ul>
-            </div>
+            <h4>Technology Used</h4>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+            </ul>
           </div>
         </div>
       </div>

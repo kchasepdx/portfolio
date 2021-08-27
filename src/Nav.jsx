@@ -48,7 +48,7 @@ function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="#projects">
+                      <a className="dropdown-item" href="/#projects">
                         About Projects
                       </a>
                     </li>
