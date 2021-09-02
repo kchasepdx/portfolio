@@ -66,6 +66,11 @@ function Nav() {
                         Book
                       </Link>
                     </li>
+                    <li>
+                      <Link className="dropdown-item" to="/thecowgoes">
+                        <i className="proj-bull far fa-circle"></i> The Cow Goes
+                      </Link>
+                    </li>
 
                     <li>
                       <Link className="dropdown-item" to="/showfinder">

@@ -10,6 +10,7 @@ import showfinder from "./Images/showfinder.png";
 import hikepic from "./Images/me-hiking.png";
 import coding from "./Images/coding.png";
 import mello from "./Images/mello-circle.png";
+import theCow from "./Images/thecowgoes.png";
 
 function App() {
   const [fullPCA, setFullPCA] = useState(false);
@@ -113,6 +114,20 @@ function App() {
                   />
                 </a>
               </div>
+              <div className="col">
+                <a
+                  href="https://thecowgoes.netlify.app"
+                  alt="Visit The Cow Goes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="project-pic"
+                    src={theCow}
+                    alt="site screencap"
+                  />
+                </a>
+              </div>
               <div className="w-100"></div>
               <div className="col">
                 <div className="card project-card">
@@ -167,6 +182,26 @@ function App() {
                       product data.
                       <span>
                         <a href="/mello" className="inline-link">
+                          {" "}
+                          Learn more.
+                        </a>
+                      </span>{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card project-card">
+                  <div className="card-body">
+                    <a className="h5-anchor" href="/thecowgoes">
+                      <h5 className="card-title">The Cow Goes ...</h5>
+                    </a>
+                    <p className="card-text">
+                      Fun site for kids with animal sounds, colorful piano, and
+                      two player memory game.
+                      <span>
+                        <a href="/thecowgoes" className="inline-link">
                           {" "}
                           Learn more.
                         </a>
