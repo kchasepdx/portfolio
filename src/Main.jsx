@@ -1,4 +1,3 @@
-import { waitForElementToBeRemoved } from "@testing-library/react";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import About from "./AboutMe";
