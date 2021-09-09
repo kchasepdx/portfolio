@@ -112,30 +112,30 @@ function Nav() {
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li className="dropdown-item">
-            <a href="/" className="dropdown-item">
+            <Link to="/" className="dropdown-item">
               Home
-            </a>
+            </Link>
           </li>
           <li className="dropdown-item">
-            <a href="/#projects" className="dropdown-item">
+            <Link to="/projects" className="dropdown-item">
               Projects
-            </a>
+            </Link>
           </li>
 
           <li className="dropdown-item">
-            <a href="/#experience" className="dropdown-item">
+            <Link to="/experience" className="dropdown-item">
               Experience
-            </a>
+            </Link>
           </li>
           <li className="dropdown-item">
-            <a href="/#about-me" className="dropdown-item">
+            <Link to="/about-me" className="dropdown-item">
               About Me
-            </a>
+            </Link>
           </li>
           <li className="dropdown-item">
-            <a href="/#contact" className="dropdown-item">
+            <Link to="/contact" className="dropdown-item">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
