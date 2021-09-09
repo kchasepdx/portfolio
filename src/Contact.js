@@ -1,5 +1,5 @@
 import React from "react";
-import hikepic from "./Images/me-hiking.png";
+import kristen from "./Images/kristen-circle.png";
 
 import Nav from "./Nav";
 
@@ -10,7 +10,7 @@ function Contact() {
       <div className="section-div">
         <a name="contact">
           <h1>Contact</h1>
-          <img id="hike-pic" src={hikepic} alt="Kristen Chase hiking" />
+          <img id="hike-pic" src={kristen} alt="Kristen Chase hiking" />
         </a>
         <div className="container contact-btns">
           <div className="row icon-row">
