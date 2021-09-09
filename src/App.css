@@ -69,7 +69,7 @@ h1 {
 
 @media screen and (max-width: 412px) {
   .section-div {
-    min-height: 100vh;
+    min-height: 96vh;
     height: unset !important;
   }
   .App-header {
@@ -157,7 +157,7 @@ h1 {
 }
 
 .project-card {
-  margin: 3% auto;
+  margin: 10% auto;
   background: white;
   border-style: none;
   font-family: "Nanum Myeongjo", serif;
@@ -181,7 +181,7 @@ h1 {
 }
 
 .section-div {
-  height: 100vh;
+  min-height: 96vh;
 }
 
 /* Baby Book Page */
@@ -462,4 +462,15 @@ h6 {
 
 .proj-div {
   min-height: 100vh;
+}
+
+/* footer */
+
+#footer-div {
+  height: 6vh;
+  background-color: rgb(240, 238, 238);
+  opacity: 0.5;
+}
+#footer {
+  font-family: "Nanum Myeongjo", serif;
 }

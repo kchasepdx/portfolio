@@ -48,9 +48,9 @@ function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="/#projects">
+                      <Link className="dropdown-item" to="/projects">
                         About Projects
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
@@ -80,19 +80,19 @@ function Nav() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link navbar-brand" href="#experience">
+                  <Link className="nav-link navbar-brand" to="/experience">
                     Experience
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link navbar-brand" href="#about-me">
+                  <Link className="nav-link navbar-brand" to="/aboutme">
                     About Me
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link navbar-brand" href="#contact">
+                  <Link className="nav-link navbar-brand" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
