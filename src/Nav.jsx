@@ -33,16 +33,16 @@ function Nav() {
                   </a>
                 </li>
                 <li className="nav-item dropdown ">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle navbar-brand"
-                    href="#"
+                    to="/projects"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Projects
-                  </a>
+                  </Link>
                   <ul
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
