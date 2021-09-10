@@ -44,7 +44,13 @@ function Nav(props) {
                 <li className="nav-item dropdown ">
                   <Link
                     className={`nav-link dropdown-toggle navbar-brand ${
-                      currentLoc === "/projects" ? "current-nav" : null
+                      currentLoc === "/projects" ||
+                      currentLoc === "/babybook" ||
+                      currentLoc === "/mello" ||
+                      currentLoc === "/showfinder" ||
+                      currentLoc === "thecowgoes"
+                        ? "current-nav"
+                        : null
                     }`}
                     to="/projects"
                     id="navbarDropdown"
