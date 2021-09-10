@@ -115,6 +115,9 @@ function BabyBook() {
             <h4 className="desc-h4">Register and Login System</h4>
             <ul className="proj-desc-bub">
               <li>Users log in as customers.</li>
+              <li>
+                You can try it out with username: test@test.com and pw: testuser
+              </li>
               <li>Authentication is provided by Firestore.</li>
               <li>
                 Private Routes can't be access unless user is authenticated.
