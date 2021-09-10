@@ -23,7 +23,7 @@ function BabyBook() {
               className="btn-primary code-visit"
               onClick={() => setFullScreen(false)}
             >
-              <i class="far fa-times-circle"></i>
+              <i className="far fa-times-circle"></i>
             </button>
           </div>
           <img
@@ -96,7 +96,7 @@ function BabyBook() {
             onClick={() => setFullScreen(true)}
             className="btn-primary code-visit"
           >
-            <i class="fas fa-film"></i> View GIF
+            <i className="fas fa-film"></i> View GIF
           </button>
 
           <div className="container proj-cont">
