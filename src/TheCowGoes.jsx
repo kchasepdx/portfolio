@@ -61,10 +61,15 @@ function TheCowGoes() {
             <div className="container-fluid"></div>
           </div>
           <div className="proj-cont">
-            <h2>Features</h2>
-            <hr className="dropdown-divider proj-divider" />
-            <h4>User Experience</h4>
-            <ul>
+            <h4 className="desc-h4">About</h4>
+            <p className="proj-desc-bub">
+              App designed for kids/toddlers. I created it with the goal of
+              keeping my daughter entertained during doctor visits. I couldn't
+              resist the challenge of creating a memory game.
+            </p>
+
+            <h4 className="desc-h4">User Experience</h4>
+            <ul className="proj-desc-bub">
               <li>User can play a colorful piano.</li>
               <li>
                 User can play a variety of animal sounds and watch as the
@@ -77,8 +82,8 @@ function TheCowGoes() {
               <li>User can play a two person game of memory.</li>
             </ul>
 
-            <h4>Technology Used</h4>
-            <ul>
+            <h4 className="desc-h4">Technology Used</h4>
+            <ul className="proj-desc-bub">
               <li>Javascript</li>
               <li>HTML</li>
               <li>CSS</li>
