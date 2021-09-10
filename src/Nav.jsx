@@ -116,11 +116,6 @@ function Nav() {
               Home
             </Link>
           </li>
-          <li className="dropdown-item">
-            <Link to="/projects" className="dropdown-item">
-              Projects
-            </Link>
-          </li>
 
           <li className="dropdown-item">
             <Link to="/experience" className="dropdown-item">
@@ -135,6 +130,34 @@ function Nav() {
           <li className="dropdown-item">
             <Link to="/contact" className="dropdown-item">
               Contact
+            </Link>
+          </li>
+          <li className="dropdown-item">
+            <Link to="/projects" className="dropdown-item">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <hr className="dropdown-divider" />
+          </li>
+          <li className="dropdown-item">
+            <Link to="/showfinder" className="dropdown-item">
+              ShowFinder
+            </Link>
+          </li>
+          <li className="dropdown-item">
+            <Link to="/babybook" className="dropdown-item">
+              Baby Book
+            </Link>
+          </li>
+          <li className="dropdown-item">
+            <Link to="/mello" className="dropdown-item">
+              Mello
+            </Link>
+          </li>
+          <li className="dropdown-item">
+            <Link to="/thecowgoes" className="dropdown-item">
+              The Cow Goes..
             </Link>
           </li>
         </ul>
