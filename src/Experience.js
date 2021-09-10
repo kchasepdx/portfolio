@@ -72,7 +72,7 @@ function Experience() {
             </div>
 
             <div className="col">
-              <div NameName="card exp-card">
+              <div className="card exp-card">
                 <a href="https://meketa.com" target="_blank" rel="noreferrer">
                   <img
                     id="meketa-pic"
