@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+  const [currentLoc, setCurrentLoc] = useState("");
+
+  useEffect(() => {
+    setCurrentLoc(document.URL.substr(document.URL.lastIndexOf("/")));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div>
       <div className="nav fixed-top full-nav">
@@ -25,7 +32,9 @@ function Nav() {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a
-                    className="nav-link active navbar-brand"
+                    className={`nav-link active navbar-brand ${
+                      currentLoc === "/" ? "current-nav" : null
+                    }`}
                     aria-current="page"
                     href="/"
                   >
@@ -34,7 +43,9 @@ function Nav() {
                 </li>
                 <li className="nav-item dropdown ">
                   <Link
-                    className="nav-link dropdown-toggle navbar-brand"
+                    className={`nav-link dropdown-toggle navbar-brand ${
+                      currentLoc === "/projects" ? "current-nav" : null
+                    }`}
                     to="/projects"
                     id="navbarDropdown"
                     role="button"
@@ -80,17 +91,32 @@ function Nav() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link navbar-brand" to="/experience">
+                  <Link
+                    className={`nav-link navbar-brand ${
+                      currentLoc === "/experience" ? "current-nav" : null
+                    }`}
+                    to="/experience"
+                  >
                     Experience
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link navbar-brand" to="/aboutme">
+                  <Link
+                    className={`nav-link navbar-brand ${
+                      currentLoc === "/aboutme" ? "current-nav" : null
+                    }`}
+                    to="/aboutme"
+                  >
                     About Me
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link navbar-brand" to="/contact">
+                  <Link
+                    className={`nav-link navbar-brand ${
+                      currentLoc === "/contact" ? "current-nav" : null
+                    }`}
+                    to="/contact"
+                  >
                     Contact
                   </Link>
                 </li>

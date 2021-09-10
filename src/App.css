@@ -375,6 +375,11 @@ h6 {
 
 /* Nav Bar */
 
+.current-nav {
+  text-decoration: overline;
+  text-decoration-color: turquoise;
+  text-decoration-style: double;
+}
 .dropdown-menu {
   background-color: black;
 }
