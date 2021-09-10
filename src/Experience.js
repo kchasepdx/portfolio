@@ -44,7 +44,7 @@ function Experience() {
                   <h5>Senior Investment Analyst</h5>
                   <h6>2011-2019</h6>
                   <button id="PCA" onClick={(e) => viewFull(e)}>
-                    <i class="far fa-caret-square-down expand-icon"></i>
+                    <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
                   {fullPCA && (
                     <div>
@@ -72,7 +72,7 @@ function Experience() {
             </div>
 
             <div className="col">
-              <div className="card exp-card">
+              <div NameName="card exp-card">
                 <a href="https://meketa.com" target="_blank" rel="noreferrer">
                   <img
                     id="meketa-pic"
@@ -85,7 +85,7 @@ function Experience() {
                   <h5>Assistant V.P. / Investment Analyst</h5>
                   <h6>2019-2021</h6>
                   <button id="Meketa" onClick={(e) => viewFull(e)}>
-                    <i class="far fa-caret-square-down expand-icon"></i>
+                    <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
                   {fullMIG && (
                     <div>
@@ -138,7 +138,7 @@ function Experience() {
                   <h5>Student of Software Developement</h5>
                   <h6>2020-Current</h6>
                   <button id="softDev" onClick={(e) => viewFull(e)}>
-                    <i class="far fa-caret-square-down expand-icon"></i>
+                    <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
 
                   {fullSD && (

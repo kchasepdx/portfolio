@@ -58,7 +58,7 @@ function BabyBook() {
           rel="noreferrer"
         >
           <button className="btn-primary site-visit">
-            <i class="fas fa-sign-in-alt"></i> Visit Site
+            <i className="fas fa-sign-in-alt"></i> Visit Site
           </button>
         </a>
         <a
@@ -67,7 +67,7 @@ function BabyBook() {
           rel="noreferrer"
         >
           <button className="btn-primary code-visit">
-            <i class="fas fa-code"></i> View code
+            <i className="fas fa-code"></i> View code
           </button>
         </a>
 
