@@ -48,7 +48,7 @@ function Nav(props) {
                       currentLoc === "/babybook" ||
                       currentLoc === "/mello" ||
                       currentLoc === "/showfinder" ||
-                      currentLoc === "thecowgoes"
+                      currentLoc === "/thecowgoes"
                         ? "current-nav"
                         : null
                     }`}
