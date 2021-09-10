@@ -149,7 +149,7 @@ function Nav(props) {
             </Link>
           </li>
           <li className="dropdown-item">
-            <Link to="/about-me" className="dropdown-item">
+            <Link to="/aboutme" className="dropdown-item">
               About Me
             </Link>
           </li>
