@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App container-fluid">
       <Nav />
-      <div>
+
+      <div id="landing-bg">
         <div id="background-img">
           <img id="code-pic" src={screenshot} alt="code" />
         </div>
