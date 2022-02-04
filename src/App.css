@@ -154,9 +154,9 @@ h1 {
   .logo-img {
     width: 10% !important;
   }
-  .site-gif {
+  /* .site-gif {
     width: 85% !important;
-  }
+  } */
   .full-screen-gif {
     height: 40vh !important;
     margin: 30% auto !important;
@@ -297,6 +297,15 @@ h1 {
   margin: 3% auto;
 }
 
+.exp-card img {
+  cursor: pointer;
+}
+
+.card-body h5 {
+  width: 175px;
+  margin: auto;
+}
+
 /* Baby Book Page */
 
 #babybook-gif {
@@ -356,28 +365,34 @@ ul.list-group {
   margin: 3% 5%;
   font-family: "Nanum Myeongjo", serif;
   font-size: 0.5rem;
-  /* border: 2px solid black; */
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  min-height: 200px;
+  align-items: center;
 }
 
 #pca-pic {
-  width: 50%;
-  margin: 1% auto;
+  width: 40%;
+  margin: 3% auto 4%;
 }
 
 #meketa-pic {
-  width: 50%;
-  margin: 1% auto;
+  width: 35%;
+  margin: 5% auto;
+}
+
+#wrapmate-logo {
+  width: 45%;
+  margin: 5% auto;
 }
 
 #code-icon {
-  width: 20%;
-  margin: 0 auto;
+  width: 16%;
+  margin: 3% auto;
 }
 
 h5,
@@ -392,10 +407,17 @@ h6 {
 
 #PCA,
 #Meketa,
-#softDev {
+#softDev,
+#wrapmateBtn {
   background-color: transparent;
   border: none;
 }
+
+/* .card-body {
+  position: absolute;
+  top: 4rem;
+  width: 15rem;
+} */
 
 /* ABOUT ME */
 

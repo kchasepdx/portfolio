@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import pca from "./Images/PCA-logo.png";
 import coding from "./Images/coding.png";
 import meketa from "./Images/Meketa.png";
-
+import wrapmate from "./Images/wrapmatelogo.svg";
 import Nav from "./Nav";
 
 function Experience() {
   const [fullPCA, setFullPCA] = useState(false);
   const [fullMIG, setFullMIG] = useState(false);
   const [fullSD, setFullSD] = useState(false);
+  const [fullWM, setFullWM] = useState(false);
 
   function viewFull(e) {
     if (e.target.parentElement.id === "PCA") {
@@ -17,6 +18,8 @@ function Experience() {
       setFullMIG(!fullMIG);
     } else if (e.target.parentElement.id === "softDev") {
       setFullSD(!fullSD);
+    } else if (e.target.parentElement.id === "wrapmateBtn") {
+      setFullWM(!fullWM);
     } else {
       console.log(e);
       console.log(e.target.parentElement.id);
@@ -136,7 +139,7 @@ function Experience() {
                 />
                 <div className="card-body">
                   <h5>Student of Software Developement</h5>
-                  <h6>2020-Current</h6>
+                  <h6>2020-2021</h6>
                   <button id="softDev" onClick={(e) => viewFull(e)}>
                     <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
@@ -150,6 +153,40 @@ function Experience() {
                         to code. I completed the UDemy 2021 Complete Web
                         Development Bootcamp and have worked on numerous
                         personal projects to further my knowledge.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card exp-card">
+                <a
+                  href="https:/wrapmate.com"
+                  target="_blank"
+                  rel="noreferrer"
+                ></a>
+                <img
+                  id="wrapmate-logo"
+                  src={wrapmate}
+                  alt="code icon"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5>Junior Software Engineer</h5>
+                  <h6>2021-Current</h6>
+                  <button id="wrapmateBtn" onClick={(e) => viewFull(e)}>
+                    <i className="far fa-caret-square-down expand-icon"></i>
+                  </button>
+
+                  {fullWM && (
+                    <div>
+                      <p className="card-text">
+                        Wrapmate is an end-to-end digital platform for consumers
+                        to get their graphic projects designed, printed and
+                        installed. Technologies used include Javascript, CSS,
+                        HTML, AWS, Nunjucks, 11ty, Google Tag Manager, Figma,
+                        Asana, and Basecamp.
                       </p>
                     </div>
                   )}
