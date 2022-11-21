@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import About from "./AboutMe";
 
 //Pages
 import BabyBook from "./BabyBook";
+import About from "./AboutMe";
 import Contact from "./Contact";
 import Experience from "./Experience";
 import Landing from "./Landing";

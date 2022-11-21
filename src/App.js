@@ -1,12 +1,11 @@
 import "./App.css";
-import Footer from "./Footer";
 import Main from "./Main";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <Main />
-      <Footer />
     </div>
   );
 }

@@ -37,43 +37,68 @@ function Experience() {
           <div className="row">
             <div className="col">
               <div className="card exp-card">
+                <a
+                  href="https:/wrapmate.com"
+                  target="_blank"
+                  rel="noreferrer"
+                ></a>
                 <img
-                  id="pca-pic"
-                  src={pca}
-                  alt="Pension Consulting Alliance logo"
+                  id="wrapmate-logo"
+                  src={wrapmate}
+                  alt="code icon"
                   className="card-img-top"
                 />
                 <div className="card-body">
-                  <h5>Senior Investment Analyst</h5>
-                  <h6>2011-2019</h6>
-                  <button id="PCA" onClick={(e) => viewFull(e)}>
+                  <h5>Software Engineer</h5>
+                  <h6>2021-Current</h6>
+                  <button id="wrapmateBtn" onClick={(e) => viewFull(e)}>
                     <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
-                  {fullPCA && (
+
+                  {fullWM && (
                     <div>
                       <p className="card-text">
-                        Pension Consulting Alliance (PCA) was an investing
-                        consulting firm that serviced institutional investors
-                        like public pension plans. It merged with Meketa
-                        Investment Group in 2019. I held several roles at this
-                        firm and was evenutally a Senior Investment Analyst. As
-                        an Investment Analyst my responsibilities included:{" "}
+                        Wrapmate is an end-to-end digital platform for consumers
+                        to get their graphic projects designed, printed and
+                        installed. Technologies used include Javascript, CSS,
+                        HTML, AWS, Nunjucks, 11ty, Google Tag Manager, Figma,
+                        Asana, and Basecamp.
                       </p>
-                      <ul className="card-text">
-                        <li>Coordinate small consulting teams</li>
-                        <li>
-                          Generate investment performance reports, client memos,
-                          and presentations
-                        </li>
-                        <li>Travel and Present to client board meetings</li>
-                        <li>Lead a weekly staff meeting</li>
-                      </ul>
                     </div>
                   )}
                 </div>
               </div>
             </div>
+            <div className="col">
+              <div className="card exp-card">
+                <img
+                  id="code-icon"
+                  src={coding}
+                  alt="code icon"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5>Student of Software Developement</h5>
+                  <h6>2020-2021</h6>
+                  <button id="softDev" onClick={(e) => viewFull(e)}>
+                    <i className="far fa-caret-square-down expand-icon"></i>
+                  </button>
 
+                  {fullSD && (
+                    <div>
+                      <p className="card-text">
+                        My interest in coding was initially sparked years ago,
+                        but I just recently decided to resign from my finance
+                        position to devote all of my available time to learning
+                        to code. I completed the UDemy 2021 Complete Web
+                        Development Bootcamp and have worked on numerous
+                        personal projects to further my knowledge.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
             <div className="col">
               <div className="card exp-card">
                 <a href="https://meketa.com" target="_blank" rel="noreferrer">
@@ -132,62 +157,36 @@ function Experience() {
             <div className="col">
               <div className="card exp-card">
                 <img
-                  id="code-icon"
-                  src={coding}
-                  alt="code icon"
+                  id="pca-pic"
+                  src={pca}
+                  alt="Pension Consulting Alliance logo"
                   className="card-img-top"
                 />
                 <div className="card-body">
-                  <h5>Student of Software Developement</h5>
-                  <h6>2020-2021</h6>
-                  <button id="softDev" onClick={(e) => viewFull(e)}>
+                  <h5>Senior Investment Analyst</h5>
+                  <h6>2011-2019</h6>
+                  <button id="PCA" onClick={(e) => viewFull(e)}>
                     <i className="far fa-caret-square-down expand-icon"></i>
                   </button>
-
-                  {fullSD && (
+                  {fullPCA && (
                     <div>
                       <p className="card-text">
-                        My interest in coding was initially sparked years ago,
-                        but I just recently decided to resign from my finance
-                        position to devote all of my available time to learning
-                        to code. I completed the UDemy 2021 Complete Web
-                        Development Bootcamp and have worked on numerous
-                        personal projects to further my knowledge.
+                        Pension Consulting Alliance (PCA) was an investing
+                        consulting firm that serviced institutional investors
+                        like public pension plans. It merged with Meketa
+                        Investment Group in 2019. I held several roles at this
+                        firm and was evenutally a Senior Investment Analyst. As
+                        an Investment Analyst my responsibilities included:{" "}
                       </p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card exp-card">
-                <a
-                  href="https:/wrapmate.com"
-                  target="_blank"
-                  rel="noreferrer"
-                ></a>
-                <img
-                  id="wrapmate-logo"
-                  src={wrapmate}
-                  alt="code icon"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h5>Junior Software Engineer</h5>
-                  <h6>2021-Current</h6>
-                  <button id="wrapmateBtn" onClick={(e) => viewFull(e)}>
-                    <i className="far fa-caret-square-down expand-icon"></i>
-                  </button>
-
-                  {fullWM && (
-                    <div>
-                      <p className="card-text">
-                        Wrapmate is an end-to-end digital platform for consumers
-                        to get their graphic projects designed, printed and
-                        installed. Technologies used include Javascript, CSS,
-                        HTML, AWS, Nunjucks, 11ty, Google Tag Manager, Figma,
-                        Asana, and Basecamp.
-                      </p>
+                      <ul className="card-text">
+                        <li>Coordinate small consulting teams</li>
+                        <li>
+                          Generate investment performance reports, client memos,
+                          and presentations
+                        </li>
+                        <li>Travel and Present to client board meetings</li>
+                        <li>Lead a weekly staff meeting</li>
+                      </ul>
                     </div>
                   )}
                 </div>

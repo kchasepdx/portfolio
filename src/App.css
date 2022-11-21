@@ -2,20 +2,32 @@
 font-family: 'Londrina Solid', cursive;
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Zen Loop', cursive; */
+html, body, #root, .App {
+  min-height: 100%;
+  height: 1000px;
+}
 
+#app-container{
+  height: 100%;
+  position: relative;
+}
 #root {
   background: linear-gradient(
     to right,
-    rgba(205, 240, 234, 1) 13%,
-    rgba(205, 240, 234, 1) 34%,
-    rgba(247, 219, 240, 1) 61%,
-    rgba(190, 174, 226, 1) 100%
+    rgb(29, 137, 149) 13%,
+    rgb(25, 80, 114) 34%,
+    rgb(140, 63, 120) 61%,
+    rgb(71, 48, 123) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   text-align: center;
 }
 ul {
   padding-left: 2rem;
   list-style-type: square;
+}
+
+.container-fluid{
+  padding: 0;
 }
 .contact-link {
   color: white;
@@ -32,12 +44,7 @@ ul {
   filter: blur(2px);
   -webkit-filter: blur(2px);
   pointer-events: none;
-
-  /* Full height */
-  height: 100%;
-  width: 100vw;
-
-  /* Center and scale the image nicely */
+  height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,20 +54,20 @@ ul {
 }
 
 .landing-div {
-  height: 100vh;
+  height: 100%;
 }
 
 #landing-bg {
   background: linear-gradient(
     -45deg,
-    rgba(190, 174, 226, 1),
-    rgba(247, 219, 240, 1),
-    rgba(205, 240, 234, 1),
-    #23d5ab
+    rgb(105, 56, 218),
+    rgba(126, 36, 104, 1),
+    rgba(25, 80, 114, 1),
+    #0d4739
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -79,105 +86,22 @@ ul {
 h1 {
   font-family: "Londrina Shadow", cursive;
   font-size: 6rem;
-  color: black;
+  color: white;
   padding-top: 7%;
 }
 
 .App-header {
   font-family: "Londrina Shadow", cursive;
   font-size: 9rem;
-  color: black;
+  color: white;
   margin: 0 auto;
   padding-top: 15%;
 }
 
-/* For Phones */
-
-@media screen and (max-width: 412px) {
-  .section-div {
-    min-height: 96vh;
-    height: unset !important;
-  }
-  .App-header {
-    font-size: 5rem;
-  }
-
-  .landing-p {
-    font-size: 3rem !important;
-  }
-
-  .contact-link {
-    font-size: 5rem;
-    margin-top: 2%;
-  }
-
-  .col {
-    flex: none;
-  }
-
-  .project-card {
-    display: none;
-  }
-
-  .project-pic {
-    width: 50vw !important;
-    margin: 2vh 10vh;
-  }
-
-  .exp-card {
-    font-size: 0.4em;
-    margin: 2%;
-    text-align: center;
-  }
-
-  #me-pic {
-    display: none;
-  }
-
-  #hike-pic {
-    display: none;
-  }
-
-  .contact-button {
-    margin: 10% auto;
-    width: 90vw;
-  }
-
-  #exp-header {
-    font-size: 3rem;
-  }
-
-  #meketa-pic {
-    margin: 1% auto;
-  }
-
-  .logo-img {
-    width: 10% !important;
-  }
-  /* .site-gif {
-    width: 85% !important;
-  } */
-  .full-screen-gif {
-    height: 40vh !important;
-    margin: 30% auto !important;
-  }
-  .desc-h4 {
-    width: 50% !important;
-    text-align: center !important;
-    margin: 5% auto !important;
-  }
-  .proj-desc-bub {
-    width: 100% !important;
-  }
-  #app-link-div {
-    width: 102% !important;
-  }
-}
-/* iphone End */
-
 .landing-p {
   font-family: "Zen Loop", cursive;
   font-size: 4rem;
+  color: white;
 }
 
 #me-pic {
@@ -371,7 +295,7 @@ ul.list-group {
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  min-height: 200px;
+  min-height: 225px;
   align-items: center;
 }
 
@@ -426,6 +350,12 @@ h6 {
   filter: drop-shadow(1px 2px 3px black);
 }
 
+.fa-angles-down{
+  height: 3em;
+  color: white;
+  margin-bottom: 2rem;
+}
+
 .about-me-text .list-group-item {
   font-family: "Nanum Myeongjo", serif;
   font-size: 1rem;
@@ -472,6 +402,25 @@ h6 {
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#portland{
+  border-radius: 15px;
+}
+
+.about-me-img{
+  width: 20vw;
+  margin: auto;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+#ku{
+  width: 20vw;
+  margin: auto;
 }
 
 /* Nav Bar */
@@ -514,6 +463,11 @@ h6 {
   vertical-align: middle;
 }
 
+.navbar-light .navbar-toggler{
+  color: white;
+  border: none;
+}
+
 @media screen and (max-width: 769px) {
   .full-nav {
     display: none;
@@ -532,6 +486,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1600px) {
+#code-pic{
+  display: none;
+}
+}
+
 .navbar-narrow {
   margin: 3%;
   position: absolute;
@@ -544,7 +504,8 @@ h6 {
 /* showfinder page */
 
 #showfinder-div {
-  min-height: 100vh;
+  min-height: 100%;
+  background-color: #3492dc;
 }
 
 #sf-visit {
@@ -569,7 +530,8 @@ h6 {
 /* Mello Page*/
 
 #mello-div {
-  min-height: 100vh;
+  min-height: 100%;
+  background-color: #479495;
 }
 
 /* Project Pages */
@@ -642,23 +604,142 @@ h6 {
 }
 
 .proj-div {
-  min-height: 100vh;
+  min-height: 100%;
+  background-color: #76758f;
 }
 
 /* footer */
 
 #footer-div {
   height: 6vh;
-  background: rgba(255, 255, 255, 0.25);
+  background: linear-gradient( to right, rgb(8, 143, 120) 13%, rgb(25, 80, 114) 34%, rgb(126, 36, 104) 61%, rgb(71, 48, 123) 100% );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 #footer {
   font-family: "Nanum Myeongjo", serif;
+  margin: auto;
+  width: 100vw;
+  color: white;
 }
+
+/* For Mobile */
+
+@media screen and (max-width: 769px) {
+
+  html, body, #root, .App {
+    height: 1000px;
+  }
+
+  .section-div {
+    min-height: 96vh;
+    height: unset !important;
+  }
+
+  #background-img{
+    display: none;
+  }
+  .App-header {
+    font-size: 5rem;
+  }
+
+  .landing-p {
+    font-size: 3rem;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 1.5rem;
+    line-height: 65px;
+  }
+
+  .col{
+    padding: 1rem 0;
+  }
+
+  .contact-link {
+    font-size: 8rem;
+    margin-top: 2%;
+  }
+
+  .col {
+    flex: none;
+  }
+
+  .project-card {
+    display: none;
+  }
+
+  .project-pic {
+    width: 50vw !important;
+    margin: 2vh 10vh;
+  }
+
+  .exp-card {
+    font-size: 0.4em;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
+
+  #me-pic {
+    display: none;
+  }
+  #me-card {
+    width: 75vw;
+  }
+
+  #hike-pic {
+    display: none;
+  }
+
+  .about-me-img{
+    width: 75vw;
+  }
+
+  #ku{
+    width: 60vw;
+    margin: auto;
+  }
+
+  .contact-button {
+    margin: 3% auto;
+    width: 90vw;
+  }
+
+  #exp-header {
+    font-size: 5rem;
+    color: white;
+    padding-top: 3rem;
+  }
+
+  #meketa-pic {
+    margin: 1% auto;
+  }
+
+  .logo-img {
+    width: 10% !important;
+  }
+  /* .site-gif {
+    width: 85% !important;
+  } */
+  .full-screen-gif {
+    height: 40vh !important;
+    margin: 30% auto !important;
+  }
+  .desc-h4 {
+    width: 50% !important;
+    text-align: center !important;
+    margin: 5% auto !important;
+  }
+  .proj-desc-bub {
+    width: 100% !important;
+  }
+  #app-link-div {
+    width: 102% !important;
+  }
+}
+/* Mobile End */
 
 @keyframes bounce {
   0%,

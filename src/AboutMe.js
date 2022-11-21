@@ -1,5 +1,12 @@
 import React from "react";
-import me from "./Images/me-ivy.png";
+import kristen from "./Images/kristen-circle.png";
+import ku from "./Images/ku.png";
+import portland from "./Images/portland.jpeg";
+import wrapmate from "./Images/wrapmatelogo.svg";
+import finance from "./Images/finance.png";
+import world from "./Images/world.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 import Nav from "./Nav";
 
@@ -11,30 +18,60 @@ function About() {
         <a name="about-me">
           <h1 id="about-h1">About Me</h1>
           <div className="container-fluid">
-            <img id="me-pic" src={me} alt="Kristen Chase" />
+            <img id="hike-pic" src={kristen} alt="Kristen Chase " />
             <ul className="about-me-text list-group">
+              <img
+                className="about-me-img"
+                id="ku"
+                src={ku}
+                alt="University of Kansas Mascot"
+              />
+
               <li id="me-card" className="list-group-item">
-                I grew up and went to college in Lawrence, KS. Upon graduating I
-                was eager for change and moved to Portland, OR. I secured a
-                great job in finance. In my free time I learned a little bit of
-                Javascript and would do coding puzzles. I committed to learning
-                about finance and was trusted with more and more responsibilties
-                until I was eventully promoted to an Investment Analyst. During
-                the pandemic I decided to explore coding once again. I
-                immediately realized that I had a knack for it. I had to force
-                myself to sit down and learn financial concepts, but with coding
-                I looked forward to the evenings in front of the screen. After
-                about a year I took a big leap and quit my job in order to
-                devote all of my availabe time to learning to code. I'm loving
-                every minute of it. Hours in front of my computer fly by. I
-                especially love the problem solving. It can be tedious and soul
-                crushing at times, but it is so rewarding when things work out.
-                When I'm not in front of the computer I'm hanging out with my
-                family - my husband, our toddler daughter, and our Manchester
-                Terrier mix, Rooney. I enjoy cooking, going outdoors to take in
-                the natural beaty of the Pacific Northwest, and drinking too
-                much coffee. I'm hoping to find a role where I can be a part of
-                a strong team, be challenged, and add value.
+                I grew up in Lawrence, KS and graduated from the University of
+                Kansas with a BA in Spanish and a Business Minor.
+              </li>
+              <FontAwesomeIcon icon={faAnglesDown} />
+              <img
+                className="about-me-img"
+                id="portland"
+                src={portland}
+                alt="portland, oregon"
+              />
+              <li id="me-card" className="list-group-item">
+                Upon graduating I was eager for change and moved to Portland,
+                OR. I met my husband here and we now have two kids.
+              </li>
+              <FontAwesomeIcon icon={faAnglesDown} />
+              <img
+                className="about-me-img"
+                src={finance}
+                alt="finance-graphic"
+              />
+              <li id="me-card" className="list-group-item">
+                I secured a great job in finance and continued in that industry
+                for a decade. In my free time I learned Javascript and would
+                solve coding puzzles....
+              </li>
+              <FontAwesomeIcon icon={faAnglesDown} />
+              <img src={world} alt="eartch" className="about-me-img" />
+              <li id="me-card" className="list-group-item">
+                {" "}
+                During the pandemic I decided to explore coding once again. I
+                took a big leap and quit my job in order to devote all of my
+                availabe time to learning to code.
+              </li>
+              <FontAwesomeIcon icon={faAnglesDown} />
+
+              <img
+                className="about-me-img"
+                id="wm-img"
+                src={wrapmate}
+                alt="wrapmate logo"
+              />
+              <li id="me-card" className="list-group-item">
+                I currently work at a startup called Wrapmate as a Software
+                Engineer. I have an amazing boss and stellar team.
               </li>
             </ul>
           </div>
