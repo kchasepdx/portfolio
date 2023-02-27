@@ -32,7 +32,7 @@ function About() {
                 className="about-me-img"
                 id="ku"
                 src={ku}
-                alt="University of Kansas Mascot"
+                alt="University of Kansas Mascot-Jayhawk"
               />
 
               <li id="me-card" className="list-group-item">
