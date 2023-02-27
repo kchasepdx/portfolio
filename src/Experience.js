@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import pca from "./Images/PCA-logo.png";
-import coding from "./Images/coding.png";
+// import coding from "./Images/coding.png";
 import meketa from "./Images/Meketa.png";
 import wrapmate from "./Images/wrapmatelogo.svg";
 import Nav from "./Nav";
