@@ -20,6 +20,14 @@ function About() {
           <div className="container-fluid">
             <img id="hike-pic" src={kristen} alt="Kristen Chase " />
             <ul className="about-me-text list-group">
+              <li id="me-card" className="list-group-item">
+                Experienced Software Engineer with proven analytic and
+                troubleshooting skills, and experience contributing to a
+                collaborative work environment. Specializes in JavaScript and
+                React. Professional strengths include creative problem-solving,
+                clear communication, and time management. Detail-oriented
+                mindset from 9+ years of experience in the finance industry.
+              </li>
               <img
                 className="about-me-img"
                 id="ku"
@@ -70,8 +78,13 @@ function About() {
                 alt="wrapmate logo"
               />
               <li id="me-card" className="list-group-item">
-                I currently work at a startup called Wrapmate as a Software
-                Engineer. I have an amazing boss and stellar team.
+                Wrapmate is an online solution to purchase, design, print, and
+                install a high quality vehicle wrap. I work with Product and
+                Engineering teams to architect, build, and maintain the website
+                and other behind the scenes applications. Responsible for client
+                and server-side tasks. Leverage cloudwatch and other debugging
+                tools for troubleshooting. Independently generate solutions to
+                complex tech problems.
               </li>
             </ul>
           </div>

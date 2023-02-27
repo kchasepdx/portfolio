@@ -295,7 +295,7 @@ ul.list-group {
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  min-height: 225px;
+  min-height: 240px;
   align-items: center;
 }
 
@@ -311,7 +311,7 @@ ul.list-group {
 
 #wrapmate-logo {
   width: 45%;
-  margin: 5% auto;
+  margin: 5% auto 10% auto;
 }
 
 #code-icon {

@@ -49,7 +49,9 @@ function Experience() {
                   className="card-img-top"
                 />
                 <div className="card-body">
-                  <h5>Software Engineer</h5>
+                  <h5>
+                    Software <br></br>Engineer
+                  </h5>
                   <h6>2021-Current</h6>
                   <button id="wrapmateBtn" onClick={(e) => viewFull(e)}>
                     <i className="far fa-caret-square-down expand-icon"></i>
@@ -60,16 +62,31 @@ function Experience() {
                       <p className="card-text">
                         Wrapmate is an end-to-end digital platform for consumers
                         to get their graphic projects designed, printed and
-                        installed. Technologies used include Javascript, CSS,
-                        HTML, AWS, Nunjucks, 11ty, Google Tag Manager, Figma,
-                        Asana, and Basecamp.
+                        installed. Technologies,platforms & methodologies used
+                        include:
+                        <ul>
+                          <li>Javascript</li>
+                          <li>CSS</li>
+                          <li>HTML</li>
+                          <li>AWS</li>
+                          <li>11ty</li>
+                          <li>Nunjucks</li>
+                          <li>React</li>
+                          <li>Google Tag Manager</li>
+                          <li>Figma</li>
+                          <li>Asana</li>
+                          <li>Agile</li>
+                          <li>Zapier</li>
+                          <li>Pipedream</li>
+                          <li>Ruby</li>
+                        </ul>
                       </p>
                     </div>
                   )}
                 </div>
               </div>
             </div>
-            <div className="col">
+            {/* <div className="col">
               <div className="card exp-card">
                 <img
                   id="code-icon"
@@ -98,7 +115,7 @@ function Experience() {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col">
               <div className="card exp-card">
                 <a href="https://meketa.com" target="_blank" rel="noreferrer">
