@@ -102,7 +102,8 @@ function Mello() {
               alt=" MongoDB logo"
             />
           </div>
-          <a
+          {/* site no longer active */}
+          {/* <a
             href="https://mellostore.herokuapp.com/"
             target="_blank"
             rel="noreferrer"
@@ -110,7 +111,7 @@ function Mello() {
             <button className="btn-primary site-visit">
               <i className="fas fa-sign-in-alt"></i>Visit Site
             </button>
-          </a>
+          </a> */}
           <a
             href="https://github.com/kchasepdx/mello"
             target="_blank"
